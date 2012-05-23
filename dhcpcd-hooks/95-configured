@@ -10,13 +10,6 @@ if [[ $interface == p2p* ]]
 fi
 
 # For debugging:
-
-if [[ $interface == p2p* ]]
-    then
-    intf=p2p
-    else
-    intf=$interface
-fi
 setprop dhcp.${intf}.reason "${reason}"
 
 case "${reason}" in
